@@ -160,7 +160,6 @@ section.topic h2 i{
 .quote b{display:block;font-size:.76rem;color:var(--go);margin-top:.3rem;font-weight:800}
 .warn{border:1px solid var(--stop);background:var(--stop-soft);padding:.7rem .85rem;font-size:.95rem}
 .warn b{color:var(--stop)}
-.note{border:1px dashed var(--rule-strong);background:var(--card);padding:.8rem .9rem;font-size:.92rem;display:grid;gap:.5rem}
 footer{border-top:3px solid var(--ink);margin-top:2rem;padding-top:1.1rem;font-size:.86rem;color:var(--ink-soft);display:grid;gap:.5rem}
 footer b{color:var(--ink)}
 
@@ -202,9 +201,13 @@ footer b{color:var(--ink)}
   .fridge table{font-size:8.5pt}
   .fridge th,.fridge td{padding:.2rem .35rem}
   .fridge thead th{font-size:8pt}
-  section.topic{padding-block:.85rem}
+  section.topic{padding-block:.45rem}
   section.topic h2{font-size:14pt}
-  .body{gap:.45rem}
+  .body{margin-top:.5rem;gap:.38rem}
+  .quote{padding-block:.28rem}
+  .warn{padding-block:.45rem}
+  footer{margin-top:.45rem;padding-top:.4rem;border-top-width:2pt;break-inside:avoid;gap:.22rem;font-size:8.3pt;line-height:1.4}
+  footer .closing{display:none}
   a{color:inherit;text-decoration:none}
 }
 </style>
@@ -483,23 +486,10 @@ footer b{color:var(--ink)}
   </div>
 </section>
 
-<section class="topic" id="t11">
-  <h2><i>11</i>מה לאמת מול גל</h2>
-  <div class="body">
-    <div class="note">
-      <p>המסמך הזה נבנה מתמלול ההקלטה, ושני פרטים לא נשמעו בה באופן חד משמעי:</p>
-      <ul>
-        <li><strong>הירידה הקצרה של הבוקר.</strong> לא ברור אם היא נחשבת אחד משלושת הטיולים, או שהיא נוספת עליהם.</li>
-        <li><strong>מספר הארוחות ביום.</strong> מההקלטה עולות שלוש ארוחות, אחת בגדר ושתיים בפיזור, אבל גל גם אמרה ״תאכיל בוקר וערב״. כדאי לקבל ממנה מספר מדויק.</li>
-      </ul>
-    </div>
-    <p>כל התלבטות אחרת נרשמת בקבוצה. גל ביקשה במפורש שהשאלות יגיעו לשם, ולא בטלפון או בהודעה פרטית, ואמרה שבשביל זה היא נמצאת.</p>
-  </div>
-</section>
-
 <footer>
+  <p><b>שאלות והתלבטויות.</b> נרשמות בקבוצה. גל ביקשה במפורש שהשאלות יגיעו לשם, ולא בטלפון או בהודעה פרטית, ואמרה שבשביל זה היא נמצאת.</p>
   <p><b>על המסמך.</b> נבנה מתמלול מלא של הקלטת ההדרכה בבית, 22 בנובמבר 2026, באורך 42 דקות. הניסוח הוא שלנו, התוכן הוא של גל. ציטוט שמופיע במסמך נלקח מההקלטה.</p>
-  <p>שלושה שבועות בפנסיון נתנו לליבי בסיס. העקביות שלנו בבית היא מה שיקבע אם הוא יחזיק. היא כלבה עם המון ביטחון, וגל סיכמה את זה במילים שלה: כלבה מדהימה.</p>
+  <p class="closing">שלושה שבועות בפנסיון נתנו לליבי בסיס. העקביות שלנו בבית היא מה שיקבע אם הוא יחזיק. היא כלבה עם המון ביטחון, וגל סיכמה את זה במילים שלה: כלבה מדהימה.</p>
 </footer>
 
 </div>
