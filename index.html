@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+html{color-scheme:light dark}
+body{margin:0;font:14px system-ui,sans-serif}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="כללי הבית של ליבי, מתוך ההדרכה של גל אחרי פנסיון האילוף. צרכים, גדר, ג׳נטל, אוכל, נשיכות, טיול ופקודות.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ליבי">
+<meta property="og:title" content="ליבי, כללי הבית">
+<meta property="og:description" content="כל מה שגל אמרה בהדרכה, בעמוד אחד לתלות על המקרר ועוד פירוט לכל נושא.">
+<meta property="og:url" content="https://amitrubin10.github.io/LIBI/">
+<meta property="og:image" content="https://amitrubin10.github.io/LIBI/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ליבי, גורה לבנה בת 4 חודשים, יושבת על הדשא">
+<meta property="og:locale" content="he_IL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ליבי, כללי הבית">
+<meta name="twitter:description" content="כל מה שגל אמרה בהדרכה, בעמוד אחד לתלות על המקרר ועוד פירוט לכל נושא.">
+<meta name="twitter:image" content="https://amitrubin10.github.io/LIBI/og.jpg">
+<link rel="icon" href="og.jpg">
+<title>ליבי, כללי הבית</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Secular+One&display=swap">
+<style>
+/* לוח כללים להדפסה ולתלייה. עמוד ראשון מרוכז, אחריו פירוט לפי נושא. */
+:root{
+  --paper:#F6F7F5; --card:#FFFFFF;
+  --ink:#15191C; --ink-soft:#4C555C;
+  --rule:#C7CEC9; --rule-strong:#8E9A94;
+  --go:#0F6A58; --go-soft:#E2EFEA;
+  --stop:#9E3324; --stop-soft:#F7E5E1;
+  --mark:#F2C94C;
+  --font-display:"Secular One","Assistant","Arial Hebrew",sans-serif;
+  --font-body:"Assistant","Arial Hebrew","Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#11151A; --card:#181E24;
+  --ink:#EDF0ED; --ink-soft:#9DA8AA;
+  --rule:#2B333A; --rule-strong:#4A555C;
+  --go:#4FC0A4; --go-soft:#152F2A;
+  --stop:#EB9183; --stop-soft:#34201C;
+  --mark:#D9A72F;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --paper:#11151A; --card:#181E24;
+  --ink:#EDF0ED; --ink-soft:#9DA8AA;
+  --rule:#2B333A; --rule-strong:#4A555C;
+  --go:#4FC0A4; --go-soft:#152F2A;
+  --stop:#EB9183; --stop-soft:#34201C;
+  --mark:#D9A72F;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+section.topic,#fridge{scroll-margin-top:4.5rem}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:var(--font-body); font-size:16px; line-height:1.6;
+  direction:rtl; text-align:right; margin:0;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{
+  max-width:860px; margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 3rem;
+}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;text-wrap:balance;margin:0}
+p{margin:0}
+ul{margin:0;padding-inline-start:1.15rem}
+li{margin-block:.3rem}
+strong{font-weight:700}
+
+nav{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:9;
+  background:var(--card); border-bottom:1px solid var(--rule);
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+.navin{
+  max-width:860px; margin:0 auto; display:flex; gap:.4rem; flex-wrap:wrap;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:.6rem;
+}
+nav a{
+  font-size:.82rem; font-weight:600; text-decoration:none;
+  color:var(--ink-soft); border:1px solid var(--rule); border-radius:2px;
+  padding:.22rem .5rem; background:var(--paper);
+}
+nav a:hover{color:var(--go);border-color:var(--go)}
+nav a:focus-visible{outline:2px solid var(--go);outline-offset:2px}
+
+header.top{padding-block:2.2rem 1.4rem;border-bottom:3px solid var(--ink)}
+header.top h1{font-size:clamp(2.4rem,9vw,3.7rem);line-height:1.02;letter-spacing:-.01em}
+.tophead{display:flex;gap:1.5rem;align-items:flex-start}
+.topcopy{flex:1 1 auto;min-width:0}
+.portrait{
+  flex:0 0 auto;width:clamp(104px,20vw,172px);height:auto;aspect-ratio:1;
+  object-fit:cover;border-radius:50%;border:4px solid var(--card);
+  outline:1px solid var(--rule-strong);outline-offset:-4px;
+}
+@media (max-width:560px){
+  .tophead{flex-direction:column-reverse;gap:1rem}
+  .portrait{width:120px}
+}
+.sub{margin-top:.7rem;color:var(--ink-soft);font-size:1rem;max-width:62ch}
+.meta{
+  margin-top:1rem;display:flex;flex-wrap:wrap;gap:.4rem .5rem;
+  font-size:.78rem;font-weight:700;letter-spacing:.04em;
+}
+.meta span{border:1px solid var(--rule-strong);padding:.18rem .45rem;color:var(--ink-soft)}
+
+.band{font-family:var(--font-display);font-size:.95rem;letter-spacing:.08em;color:var(--go);margin-block:2.2rem .8rem}
+.band em{font-style:normal;color:var(--ink-soft);font-family:var(--font-body);font-weight:600;letter-spacing:0;font-size:.85rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(328px,1fr));gap:.8rem}
+.rulecard{
+  background:var(--card);border:1px solid var(--rule-strong);
+  padding:.85rem .9rem;display:flex;gap:.7rem;align-items:flex-start;min-width:0;
+}
+.num{
+  font-family:var(--font-display);font-size:1.2rem;line-height:1;
+  color:#15191C;background:var(--mark);
+  min-width:1.95rem;height:1.95rem;display:grid;place-items:center;flex:0 0 auto;
+}
+.rulecard p{font-size:.97rem;line-height:1.45;min-width:0}
+.rulecard b{display:block;font-size:1.02rem;font-weight:800;margin-bottom:.12rem}
+
+.tablebox{overflow-x:auto;border:1px solid var(--rule-strong);background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:430px;font-size:.93rem;font-variant-numeric:tabular-nums}
+caption{text-align:right;font-weight:700;padding:.55rem .7rem;border-bottom:1px solid var(--rule-strong);background:var(--paper)}
+th,td{border:1px solid var(--rule);padding:.5rem .65rem;vertical-align:top;text-align:right}
+thead th{background:var(--paper);font-weight:800;font-size:.85rem;letter-spacing:.02em}
+td.fill{color:var(--ink-soft);letter-spacing:.14em;min-width:5.5rem}
+.yes th:first-child,.yes td:first-child{background:var(--go-soft)}
+.yes th:last-child,.yes td:last-child{background:var(--stop-soft)}
+.cmd td:first-child{font-weight:800;font-family:var(--font-display);white-space:nowrap}
+
+section.topic{border-top:1px solid var(--rule-strong);padding-block:1.6rem;break-inside:avoid}
+section.topic h2{font-size:1.5rem;display:flex;gap:.6rem;align-items:baseline}
+section.topic h2 i{
+  font-style:normal;font-size:.95rem;color:var(--go);border:1.5px solid var(--go);
+  min-width:1.75rem;height:1.75rem;display:grid;place-items:center;flex:0 0 auto;
+}
+.body{margin-top:.8rem;display:grid;gap:.75rem}
+.lead{font-size:1.05rem;font-weight:600}
+.quote{
+  border-inline-start:4px solid var(--mark);padding:.45rem .8rem;
+  background:var(--card);font-size:.95rem;color:var(--ink-soft);
+}
+.quote b{display:block;font-size:.76rem;color:var(--go);margin-top:.3rem;font-weight:800}
+.warn{border:1px solid var(--stop);background:var(--stop-soft);padding:.7rem .85rem;font-size:.95rem}
+.warn b{color:var(--stop)}
+.note{border:1px dashed var(--rule-strong);background:var(--card);padding:.8rem .9rem;font-size:.92rem;display:grid;gap:.5rem}
+footer{border-top:3px solid var(--ink);margin-top:2rem;padding-top:1.1rem;font-size:.86rem;color:var(--ink-soft);display:grid;gap:.5rem}
+footer b{color:var(--ink)}
+
+@media (max-width:620px){
+  .navin{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .navin::-webkit-scrollbar{display:none}
+  nav a{white-space:nowrap}
+}
+@media (max-width:420px){
+  table{min-width:340px;font-size:.88rem}
+  th,td{padding:.4rem .45rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+@media print{
+  @page{size:A4 portrait;margin:11mm}
+  :root{--paper:#fff;--card:#fff;--ink:#000;--ink-soft:#2d2d2d;--rule:#999;--rule-strong:#444;--go:#0b5345;--stop:#8a2b1e;--go-soft:#eef5f2;--stop-soft:#faeeeb;--mark:#f2c94c}
+  body{font-size:10.3pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  nav{display:none}
+  body::before{display:none}
+  .wrap{max-width:none;padding:0}
+  .tablebox{break-inside:avoid;overflow:visible}
+  table{min-width:0}
+  .fridge{break-after:page}
+  .fridge header.top{padding-block:0 .5rem;border-bottom-width:2.5pt}
+  .fridge header.top h1{font-size:23pt}
+  .tophead{gap:.7rem;flex-direction:row}
+  .portrait{width:74pt;border-width:2pt}
+  .fridge .sub{font-size:8.8pt;margin-top:.35rem;max-width:none}
+  .fridge .meta{margin-top:.45rem;font-size:7.4pt;gap:.25rem .3rem}
+  .fridge .meta span{padding:.1rem .3rem}
+  .fridge .band{margin-block:.55rem .28rem;font-size:9.5pt}
+  .fridge .band em{font-size:7.8pt}
+  .fridge .cards{grid-template-columns:1fr 1fr;gap:.3rem}
+  .fridge .rulecard{padding:.3rem .38rem;gap:.42rem}
+  .fridge .rulecard p{font-size:8.5pt;line-height:1.26}
+  .fridge .rulecard b{font-size:9pt;margin-bottom:0}
+  .fridge .num{font-size:9.5pt;min-width:1.25rem;height:1.25rem}
+  .fridge table{font-size:8.5pt}
+  .fridge th,.fridge td{padding:.2rem .35rem}
+  .fridge thead th{font-size:8pt}
+  section.topic{padding-block:.85rem}
+  section.topic h2{font-size:14pt}
+  .body{gap:.45rem}
+  a{color:inherit;text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="navin">
+    <a href="#fridge">דף המקרר</a>
+    <a href="#t1">צרכים</a>
+    <a href="#t2">זמן איפוק</a>
+    <a href="#t3">הגדר והבית</a>
+    <a href="#t4">ג׳נטל והשגחה</a>
+    <a href="#t5">אוכל</a>
+    <a href="#t6">נשיכות</a>
+    <a href="#t7">הטיול</a>
+    <a href="#t8">זמן חופשי</a>
+    <a href="#t9">יוצאים מהבית</a>
+    <a href="#t10">פקודות</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<div class="fridge" id="fridge">
+
+  <header class="top">
+    <div class="tophead">
+      <div class="topcopy">
+        <h1>ליבי, כללי הבית</h1>
+        <p class="sub">מה שגל אמרה בהדרכה בבית, אחרי שליבי חזרה מפנסיון האילוף. שלושה השבועות האלה בנו בסיס. מה שקורה עכשיו בבית הוא מה שיקבע אם הוא יחזיק.</p>
+        <div class="meta">
+          <span>הדרכה: 22.11.2026</span>
+          <span>ליבי, גורה בת 4 חודשים</span>
+          <span>מאלפת: גל</span>
+          <span>חל על כל בני הבית</span>
+        </div>
+      </div>
+      <img class="portrait" src="libi.jpg" alt="ליבי, גורה לבנה פרוותית בת 4 חודשים, יושבת על הדשא" width="620" height="620">
+    </div>
+  </header>
+
+  <h2 class="band">שמונה הכללים שאי אפשר לפספס <em>אם זוכרים רק את העמוד הזה, זה מספיק</em></h2>
+
+  <div class="cards">
+    <div class="rulecard"><div class="num">1</div><p><b>צרכים רק בחוץ</b>אין פדים בבית. להעיף אותם לגמרי, ושליבי לא תתקרב אליהם.</p></div>
+    <div class="rulecard"><div class="num">2</div><p><b>חזרה מטיול, חצי שעה חופש</b>עשתה צרכים בחוץ? היא מקבלת חצי שעה בבית, בהשגחה. אחרי זה גדר, או רצועה לידכם.</p></div>
+    <div class="rulecard"><div class="num">3</div><p><b>משוחררת בבית = ג׳נטל ורצועה</b>תמיד יחד, ותמיד רק כשמישהו משגיח. יצאתם מהחדר, מורידים את הג׳נטל.</p></div>
+    <div class="rulecard"><div class="num">4</div><p><b>אין אף אחד בבית? בגדר</b>בלי מים בגדר. טיול טוב לפני, ואוכל ועצם לעיסה בפנים.</p></div>
+    <div class="rulecard"><div class="num">5</div><p><b>טיול = 70% משמעת</b>עיקר הטיול פקודות והליכה ברגלי. רק 30% חופשי, לסירוגין. זה מה שמעייף אותה.</p></div>
+    <div class="rulecard"><div class="num">6</div><p><b>השתוללות רק בחוץ</b>בבית רגיעה. לא לזרוק לה כדור בסלון ולא להתרוצץ איתה בבית.</p></div>
+    <div class="rulecard"><div class="num">7</div><p><b>ניסתה לנשוך? רצועה ומשיכה</b>תופסים את הרצועה, משיכה מיד, ואומרים ״לא״. בלי ליטוף, בלי ״המתוקה שלי״, בלי לרחם.</p></div>
+    <div class="rulecard"><div class="num">8</div><p><b>מיטות וספות אסורות</b>וגם חדר השינה. יש לה מיטה משלה, וזה המקום שלה.</p></div>
+  </div>
+
+  <h2 class="band">מותר ואסור <em>הטבלה שנתלית על המקרר</em></h2>
+
+  <div class="tablebox">
+    <table class="yes">
+      <thead><tr><th scope="col">מותר, ואפילו מבורך</th><th scope="col">אסור</th></tr></thead>
+      <tbody>
+        <tr><td>להשתולל, לרוץ ולשחק בכדור בחוץ, כמה שרוצים</td><td>להשתולל או לרוץ איתה בתוך הבית</td></tr>
+        <tr><td>לתרגל איתה בבית פקודות עם חטיף, שבי וארצה</td><td>לזרוק לה צעצועים בבית ולהעלות לה את האנרגיה</td></tr>
+        <tr><td>עצם לעיסה, אחת בכל פעם</td><td>מזון ביתי, ואוכל מהשולחן או מהצלחת</td></tr>
+        <tr><td>המיטה שלה</td><td>המיטות שלנו, הספות וחדר השינה</td></tr>
+        <tr><td>לשתות לפני שנכנסת לגדר ואחרי שיוצאת</td><td>להשאיר קערת מים בגדר בזמן איפוק</td></tr>
+        <tr><td>לנקות תקלה כשהיא לא רואה, בחומץ ומים</td><td>לנקות תקלה מול העיניים שלה</td></tr>
+        <tr><td>להוריד אותה לטיול אחרי שהשתוללה</td><td>להשאיר אותה משוחררת בבית בלי השגחה</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="band">סדר היום <em>בלי שעות, לפי הרצף</em></h2>
+
+  <div class="tablebox">
+    <table>
+      <thead><tr><th scope="col">מתי</th><th scope="col">מה עושים</th></tr></thead>
+      <tbody>
+        <tr><td><strong>בוקר, מי שקם ראשון</strong></td><td>מורידים אותה מיד, גם אם זה שתיים או שלוש דקות. רק להתרוקן. עשתה פיפי, מעולה, חוזרים הביתה.</td></tr>
+        <tr><td><strong>אחרי הירידה של הבוקר</strong></td><td>ארוחת בוקר. אפשר ישר ואפשר אחר כך, לפי מה שנוח. היא יכולה לחזור לגדר אם כולם עוד ישנים.</td></tr>
+        <tr><td><strong>שלושה טיולים ביום</strong></td><td>בכל טיול: פיפי בהתחלה, אחר כך משמעת ופקודות, ומעט חופשי לסירוגין.</td></tr>
+        <tr><td><strong>אחרי כל טיול</strong></td><td>זמן חופש בבית בהשגחה, לפי השלב שאתם נמצאים בו בסולם האיפוק.</td></tr>
+        <tr><td><strong>שאר הזמן שאתם בבית</strong></td><td>גדר, או השגחה עם ג׳נטל ורצועה. לפחות שעה וחצי בגדר במהלך היום, לא חייב ברצף.</td></tr>
+        <tr><td><strong>עשר דקות, כל אחד מבני הבית</strong></td><td>תרגול פקודות איתה בתוך הבית, עם הג׳נטל והרצועה. ככה היא לומדת לקבל מרות מכולם.</td></tr>
+        <tr><td><strong>כשיוצאים מהבית</strong></td><td>גדר. טיול טוב לפני, אוכל על המיטה שלה, עצם לעיסה, בלי מים.</td></tr>
+        <tr><td><strong>לילה</strong></td><td>טיול לפני השינה, ואז גדר. אפשר לצמצם את הגדר, לא צריך את כל הגודל שלה.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<section class="topic" id="t1">
+  <h2><i>1</i>צרכים</h2>
+  <div class="body">
+    <p class="lead">זה הנושא המרכזי עכשיו. היא בת 4 חודשים וכבר מתאפקת חמש שעות וחצי, ולפעמים שש. היא יכולה. מה שחסר זה שהיא תבין שברחבי הבית לא עושים.</p>
+    <ul>
+      <li><strong>בוקר.</strong> מי שקם מוריד אותה מיד. גם ירידה של שתיים או שלוש דקות עושה את העבודה. ברגע שהתרוקנה, חוזרים הביתה.</li>
+      <li><strong>מקום קבוע.</strong> לרדת לאותו אזור בכל פעם, עד שתיווצר לה התניה. היא תגיע לשם ותעצור לעשות, בלי שנבקש.</li>
+      <li><strong>מתחת לבניין זה בסדר.</strong> לא צריך להרים אותה עד הדשא. אם היא ממש לוחצת ביציאה מהלובי, מרימים אותה רגע ביד עד למקום הקבוע.</li>
+      <li><strong>בטיול, קודם צרכים.</strong> נותנים לה הזדמנות בתחילת הטיול, וגם רגע לפני שעולים הביתה.</li>
+      <li><strong>אין פדים.</strong> לא על הפד, ולא בקרבת הפד.</li>
+    </ul>
+    <div class="quote">״אין פדים, אין פדים, אין פדים. להעיף את הפדים האלה. לא רוצה שתעשה עליהם, שלא תתקרב אליהם.״<b>גל, בהדרכה</b></div>
+    <div class="warn"><b>קרתה תקלה בבית.</b> לא לנקות מול העיניים שלה. מנקים את האזור בחומץ ומים, ואת הארוחה הבאה שלה נותנים בדיוק באותו מקום. כלב לא עושה צרכים במקום שבו הוא אוכל.</div>
+    <p>תפסתם אותה באמצע המעשה? תופסים את הרצועה ואומרים לה ״לא״ תוך כדי המעשה עצמו. אחרי שהיא סיימה, אין יותר על מה להעיר, וגם אין טעם.</p>
+  </div>
+</section>
+
+<section class="topic" id="t2">
+  <h2><i>2</i>סולם זמן האיפוק</h2>
+  <div class="body">
+    <p class="lead">לא נותנים לה את הבית בבת אחת. מעלים לה את החופש בהדרגה, ורק אחרי שהשלב הנוכחי מחזיק יומיים בלי תקלה.</p>
+    <div class="tablebox">
+      <table>
+        <caption>המטרה: חמש שעות בין טיול לטיול</caption>
+        <thead><tr><th scope="col">שלב</th><th scope="col">כמה חופש בבית אחרי טיול</th><th scope="col">מתי עולים הלאה</th><th scope="col">סיימנו בתאריך</th></tr></thead>
+        <tbody>
+          <tr><td><strong>א</strong></td><td>חצי שעה</td><td>יומיים רצופים בלי תקלה בבית</td><td class="fill">. . . . . .</td></tr>
+          <tr><td><strong>ב</strong></td><td>שעה</td><td>יומיים רצופים בלי תקלה בבית</td><td class="fill">. . . . . .</td></tr>
+          <tr><td><strong>ג</strong></td><td>שעה וחצי</td><td>יומיים רצופים בלי תקלה בבית</td><td class="fill">. . . . . .</td></tr>
+          <tr><td><strong>ד</strong></td><td>ממשיכים לעלות בהדרגה</td><td>עד חמש שעות בין טיול לטיול</td><td class="fill">. . . . . .</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>שלוש שעות גם בסדר גמור. הילדים חוזרים מבית הספר, הבית קטן, ולא חייבים להימרח עד הסוף. מורידים אותה, היא עושה פיפי, והספירה של זמן האיפוק מתחילה מחדש.</p>
+    <div class="quote">״ככל שתתנו לה יותר זמן שהיא מחוץ לתיחום ויותר איתכם, ככה נצליח לסיים את עניין הצרכים יותר מוקדם.״<b>גל, בהדרכה</b></div>
+  </div>
+</section>
+
+<section class="topic" id="t3">
+  <h2><i>3</i>הגדר, והאזור שמותר לה בבית</h2>
+  <div class="body">
+    <p class="lead">היא לא מקבלת את כל הבית. תוחמים לה אזור אחד, ומשתלטים על הבית שלב אחרי שלב.</p>
+    <ul>
+      <li><strong>לחסום.</strong> לסגור דלתות, ולשים שער בפתח. שער של איקאה עובד, ויש גם רשתות באליאקספרס. אם היא עוברת בין הפסים, רשת פותרת את זה.</li>
+      <li><strong>בלי חדר שינה ובלי ספות.</strong> אין לה מה לחפש שם. יש לה מיטה משלה והיא תהיה בסדר גמור.</li>
+      <li><strong>שעה וחצי בגדר ביום</strong> גם כשאתם בבית. לא חייב ברצף.</li>
+      <li><strong>כשאין אף אחד בבית</strong> היא בגדר. בלי יוצאים מן הכלל.</li>
+      <li><strong>אין צורך בגדר ענקית.</strong> אפשר לצמצם. גל ראתה אותה בפנסיון בכלוב לא גדול מזה, והיא הייתה בסדר לגמרי.</li>
+      <li><strong>אם היא קופצת מעל</strong> אפשר לסגור את הגדר גם מלמעלה.</li>
+      <li><strong>כשאתם בבית</strong> כדאי לסדר את הפתח כך שתוכל להיכנס ולצאת מהגדר לבד. כשאתם לא בבית סוגרים.</li>
+    </ul>
+    <div class="quote">״אני רוצה שהיא תתאפק במיליון אחוז, ובשביל זה אני צריכה שזה יהיה ככה.״<b>גל, על גדר מצומצמת</b></div>
+  </div>
+</section>
+
+<section class="topic" id="t4">
+  <h2><i>4</i>השגחה, והג׳נטל ליידר</h2>
+  <div class="body">
+    <p class="lead">כל זמן שליבי משוחררת בבית, הג׳נטל עליה ורצועה מחוברת אליו. זה מה שמאפשר לנהל אותה בלי לצעוק ובלי לרדוף אחריה.</p>
+    <p><strong>מה נחשב השגחה.</strong> או שאתם רואים אותה בזווית העין, או שהיא קשורה או יושבת לידכם עם הרצועה. אם אין לכם זמן להשגיח, היא בגדר. זו לא פשרה, זו האפשרות השנייה.</p>
+    <div class="warn"><b>הג׳נטל רק בהשגחה.</b> יצאתם לשירותים או עברתם לחדר אחר? מורידים לה את הג׳נטל. הוא לא נשאר עליה כשאף אחד לא מסתכל.</div>
+    <p>כמה שיותר זמן ביום עם הג׳נטל, יותר טוב. שעה פה, ארבעים דקות שם. לא צריך להוריד ולהחזיר בכל פעם שאתם קמים לשתי דקות.</p>
+    <div class="tablebox">
+      <table>
+        <caption>הרכבת הג׳נטל, לפי הסדר</caption>
+        <thead><tr><th scope="col">שלב</th><th scope="col">מה עושים</th></tr></thead>
+        <tbody>
+          <tr><td><strong>א</strong></td><td>מכוונים את הג׳נטל כך שהברזל נוגע בברזל. זו המידה הנכונה.</td></tr>
+          <tr><td><strong>ב</strong></td><td>מושיבים אותה, ואוחזים חטיף ביד.</td></tr>
+          <tr><td><strong>ג</strong></td><td>אומרים לה ״ראש״. היא מכניסה את האף פנימה בעצמה.</td></tr>
+          <tr><td><strong>ד</strong></td><td>נותנים את החטיף, וסוגרים את הקליפסים מאחור.</td></tr>
+          <tr><td><strong>ה</strong></td><td>אין לכם ידיים פנויות? דורכים על הרצועה עם הרגל. עובד מצוין.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>הרצועה הקטנה שמחברת את הג׳נטל ארוכה מדי. אפשר לגזור אותה שתהיה קצרה ונוחה. הקולר נשאר עליה בנפרד.</p>
+    <p>והערה למי שנבהל בחוץ: הג׳נטל הוא לא זמם. היא פותחת את הפה, שותה ואוכלת איתו בלי בעיה. הוא נותן שליטה בראש, ומהראש מנהיגים בלי כוח.</p>
+  </div>
+</section>
+
+<section class="topic" id="t5">
+  <h2><i>5</i>אוכל, ופיזור הארוחות בבית</h2>
+  <div class="body">
+    <p class="lead">האוכל הוא כלי עבודה, לא רק ארוחה. פיזור האוכל ברחבי הבית הוא מה שמלמד אותה שהבית הוא לא שירותים.</p>
+    <ul>
+      <li><strong>ארוחה אחת ביום בגדר.</strong></li>
+      <li><strong>שאר הארוחות מפוזרות על הרצפה</strong>, כל פעם במקום אחר ברחבי הבית. שופכים את המנה מהקערה ונותנים לה לאסוף.</li>
+      <li><strong>דגש על המקומות שבהם היא נוטה לעשות צרכים.</strong> שם בדיוק צריך להיות האוכל.</li>
+      <li><strong>בוקר וערב.</strong> השעה המדויקת לא קריטית, זה עניין של נוחות שלכם.</li>
+      <li><strong>בלי מזון ביתי.</strong> רק האוכל שלה.</li>
+      <li><strong>עצם לעיסה, אחת בכל פעם.</strong> זה חשוב, וזה לא פינוק.</li>
+    </ul>
+    <div class="warn"><b>מים.</b> כשהיא בגדר לזמן איפוק ארוך, לא משאירים לה מים נגישים. היא שותה לפני שנכנסת ושותה כשיוצאת. אם היא תשתה בגדר ואז תצטרך להתאפק חמש או שש שעות, הצבנו לה משימה שאי אפשר לעמוד בה.</div>
+  </div>
+</section>
+
+<section class="topic" id="t6">
+  <h2><i>6</i>נשיכות, נביחות, ו״עזבי״</h2>
+  <div class="body">
+    <p class="lead">לליבי יש צורך פיזי ללעוס. התפקיד שלנו הוא לא לבטל אותו, אלא לכוון אותו לדברים שמותר.</p>
+    <ul>
+      <li><strong>ניסתה לנשוך.</strong> תופסים את הרצועה, משיכה מיד, ואומרים ״לא״.</li>
+      <li><strong>בלי ליטוף ובלי ריחום.</strong> ״המתוקה שלי״ באותו רגע מלמד אותה בדיוק את ההפך.</li>
+      <li><strong>תופסת מכנסיים או רגליים.</strong> אותו דבר. משיכה, ״לא״, ולרסן אותה במקום תוך כדי המעשה, לא אחרי.</li>
+      <li><strong>נובחת.</strong> תופסים רצועה, אומרים ״לא״, ומרגיעים אותה.</li>
+      <li><strong>היא עוד תנסה</strong>, וזה דווקא טוב. גל אפילו מציקה לה בכוונה כדי לייצר את הניסיון, ואז לתת לה את התשובה. ככה היא לומדת, ולא כשמתחמקים מהעימות.</li>
+    </ul>
+    <div class="quote">״חשוב שהיא תנסה, ולפעמים אפילו להפעיל את זה בכוונה, כדי שהיא תדע שלא.״<b>גל, בהדרכה</b></div>
+    <p><strong>״עזבי״ זו פקודה שצריך לתרגל הרבה</strong>, ודווקא עם דברים שהיא רוצה. זורקים לה כדור, היא מביאה, ואומרים ״עזבי״. אם היא לא מרפה, לא מתחילים מאבק משיכה על החפץ. תופסים את הרצועה ומרסנים, והחפץ משתחרר מעצמו. חשוב במיוחד עם פלאפונים וכבלים: לא למשוך איתה, כי ככה היא לומדת שזה משחק.</p>
+  </div>
+</section>
+
+<section class="topic" id="t7">
+  <h2><i>7</i>הטיול</h2>
+  <div class="body">
+    <p class="lead">הטיול הוא לא הפסקת שירותים ולא זמן פנאי. זה שיעור. היא יוצאת מהבית כשהיא קשורה בג׳נטל, וחוזרת עייפה.</p>
+    <div class="cards">
+      <div class="rulecard"><div class="num">70</div><p><b>אחוז משמעת</b>רגלי, שבי, ארצה, וקריאה אליכם עם רצועה ארוכה.</p></div>
+      <div class="rulecard"><div class="num">30</div><p><b>אחוז חופשי</b>לסירוגין, כמה דקות פה וכמה דקות שם. תמיד פחות מהמשמעת.</p></div>
+    </div>
+    <p>המשמעת היא מה שמעייף אותה, לא הריצה. כלבה שחוזרת עייפה מהראש משתוללת פחות בבית.</p>
+    <div class="warn"><b>בלימות באמצע הטיול.</b> אין דבר כזה לעצור בגללה. משיכה, וממשיכים ללכת. היא רגילה לזה והיא תבחן אתכם, בדיוק כמו שבחנה את גל. אם אתם מרגישים שהיא מאטה, מגבירים את הקצב במקום להאט איתה.</div>
+    <div class="quote">״את הבלימות שחוויתם, היא הייתה מהקצוניות. זה משהו שלקח המון המון זמן.״<b>גל, על העבודה בפנסיון</b></div>
+    <p>בטיול של ההדרכה היא לא בלמה בכלל. זה הסטנדרט שאפשר לשמור עליו.</p>
+  </div>
+</section>
+
+<section class="topic" id="t8">
+  <h2><i>8</i>זמן חופשי, משחק, והילדים</h2>
+  <div class="body">
+    <p class="lead">החלוקה פשוטה. בחוץ מתפרקים, בבית נרגעים.</p>
+    <ul>
+      <li><strong>בחוץ.</strong> להשתולל, לרוץ, כדור, להחזיר. כמה שרוצים ואיך שרוצים.</li>
+      <li><strong>בבית.</strong> רגיעה. לא לזרוק לה דברים ולא להתרוצץ איתה בסלון. זה השלב הנוכחי, ובהמשך זה יתרופף.</li>
+      <li><strong>לילדים יש תפקיד אמיתי.</strong> לוקחים חטיף, אומרים ״שבי״, אומרים ״ארצה״, ונותנים את החטיף. זה משחק שמעייף אותה והיא נהנית ממנו לא פחות.</li>
+      <li><strong>מותר לכם גם פשוט לפנק אותה.</strong> היא כלבה מתוקה והיא לא צריכה להיות בתרגיל כל היום. רק צריך להיות ערניים למה שבא אחרי.</li>
+    </ul>
+    <div class="warn"><b>אחרי כל השתוללות היא כנראה צריכה להתרוקן.</b> או שמישהו מוריד אותה מיד, או שמשאירים אותה באיפוק לידכם עם הרצועה. זו כנראה הסיבה שעד היום היה נראה שהיא צריכה לצאת כל חצי שעה. לא השלפוחית אשמה, האנרגיה אשמה.</div>
+  </div>
+</section>
+
+<section class="topic" id="t9">
+  <h2><i>9</i>כשיוצאים לעבודה</h2>
+  <div class="body">
+    <p class="lead">חמש או שש שעות בגדר זה בסדר גמור בשבילה. היא ישנה את רוב הזמן הזה.</p>
+    <div class="tablebox">
+      <table>
+        <caption>הסדר לפני שסוגרים את הדלת</caption>
+        <thead><tr><th scope="col">מה</th><th scope="col">למה</th></tr></thead>
+        <tbody>
+          <tr><td><strong>טיול טוב לפני</strong></td><td>היא יוצאת מרוקנת ועייפה, ואז היא נרדמת ולא מחפשת תעסוקה.</td></tr>
+          <tr><td><strong>האוכל שלה על המיטה בגדר</strong></td><td>קושר אותה למקום בצורה חיובית.</td></tr>
+          <tr><td><strong>עצם לעיסה</strong></td><td>נותן לה מה לעשות עם הפה במקום הגדר עצמה.</td></tr>
+          <tr><td><strong>בלי מים</strong></td><td>כדי שהאיפוק יהיה אפשרי. היא שותה לפני, ושותה כשחוזרים.</td></tr>
+          <tr><td><strong>גדר מצומצמת, לא חצי בית</strong></td><td>מרחב קטן מחזק את האיפוק. מרחב גדול מזמין תקלה בפינה.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>חוזרים הביתה, מורידים אותה לטיול, ומתחילים את הרצף מחדש.</p>
+  </div>
+</section>
+
+<section class="topic" id="t10">
+  <h2><i>10</i>הפקודות</h2>
+  <div class="body">
+    <p class="lead">כל אחד בבית משתמש באותן מילים ובאותו טון. אם כל אחד ממציא ניסוח משלו, היא לא לומדת כלום.</p>
+    <div class="tablebox">
+      <table class="cmd">
+        <thead><tr><th scope="col">הפקודה</th><th scope="col">מה היא אומרת</th><th scope="col">מתי</th></tr></thead>
+        <tbody>
+          <tr><td>שבי</td><td>להתיישב ולהישאר</td><td>בכל עצירה, לפני פתיחת דלת, בתרגול עם חטיף</td></tr>
+          <tr><td>ארצה</td><td>לשכב</td><td>בדרך כלל אחרי שבי, להרגעה</td></tr>
+          <tr><td>רגלי</td><td>ללכת לידכם בקו ישר</td><td>כל הטיול, וגם ביציאה מהלובי</td></tr>
+          <tr><td>מקום</td><td>לעלות למיטה שלה ולהישאר שם</td><td>כשרוצים אותה בצד, בזמן הארוחה שלנו, כשיש אורחים</td></tr>
+          <tr><td>חופשי</td><td>התרגיל נגמר, מותר להתפרק</td><td>שלושים האחוזים של הטיול</td></tr>
+          <tr><td>עזבי</td><td>להרפות ממה שבפה</td><td>כדור, גרב, מכנסיים, כבל, פלאפון</td></tr>
+          <tr><td>אליי</td><td>לבוא ישר אליכם</td><td>קריאה מרחוק, עם רצועה ארוכה</td></tr>
+          <tr><td>ראש</td><td>להכניס את האף ללופ של הג׳נטל</td><td>בכל הרכבה של הג׳נטל</td></tr>
+          <tr><td>לא</td><td>להפסיק עכשיו</td><td>נשיכה, נביחה, עלייה על ספה, צרכים בבית</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>עשר דקות ביום, כל אחד מבני הבית לחוד, מתרגל איתה בבית עם הג׳נטל והרצועה. המטרה היא לא שהיא תדע את הפקודה. המטרה היא שהיא תקבל מרות וסמכות מכל אחד ואחת בבית.</p>
+  </div>
+</section>
+
+<section class="topic" id="t11">
+  <h2><i>11</i>מה לאמת מול גל</h2>
+  <div class="body">
+    <div class="note">
+      <p>המסמך הזה נבנה מתמלול ההקלטה, ושני פרטים לא נשמעו בה באופן חד משמעי:</p>
+      <ul>
+        <li><strong>הירידה הקצרה של הבוקר.</strong> לא ברור אם היא נחשבת אחד משלושת הטיולים, או שהיא נוספת עליהם.</li>
+        <li><strong>מספר הארוחות ביום.</strong> מההקלטה עולות שלוש ארוחות, אחת בגדר ושתיים בפיזור, אבל גל גם אמרה ״תאכיל בוקר וערב״. כדאי לקבל ממנה מספר מדויק.</li>
+      </ul>
+    </div>
+    <p>כל התלבטות אחרת נרשמת בקבוצה. גל ביקשה במפורש שהשאלות יגיעו לשם, ולא בטלפון או בהודעה פרטית, ואמרה שבשביל זה היא נמצאת.</p>
+  </div>
+</section>
+
+<footer>
+  <p><b>על המסמך.</b> נבנה מתמלול מלא של הקלטת ההדרכה בבית, 22 בנובמבר 2026, באורך 42 דקות. הניסוח הוא שלנו, התוכן הוא של גל. ציטוט שמופיע במסמך נלקח מההקלטה.</p>
+  <p>שלושה שבועות בפנסיון נתנו לליבי בסיס. העקביות שלנו בבית היא מה שיקבע אם הוא יחזיק. היא כלבה עם המון ביטחון, וגל סיכמה את זה במילים שלה: כלבה מדהימה.</p>
+</footer>
+
+</div>
+
+</body>
+</html>
